@@ -1,4 +1,4 @@
-package com.example.wapecopy.home.movie.view;
+package com.example.wapecopy.view.homeFragment.movie.view;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -6,18 +6,19 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.wapecopy.databinding.CompMovieSetBinding;
-import com.example.wapecopy.home.movie.data.MovieSet;
+import com.example.wapecopy.view.homeFragment.movie.data.MovieSet;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
 public class MovieSetAdapter extends RecyclerView.Adapter<MovieSetViewHolder> {
 
-    private ArrayList<MovieSet> movies;
+    private final ArrayList<MovieSet> movies;
 
-    public MovieSetAdapter(ArrayList<MovieSet> movies) {
-        this.movies = movies;
-    }
+    public MovieSetAdapter(ArrayList<MovieSet> movies) { this.movies = movies; }
 
+    @NotNull
     @Override
     public MovieSetViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());

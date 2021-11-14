@@ -1,4 +1,4 @@
-package com.example.wapecopy;
+package com.example.wapecopy.view;
 
 import android.os.Bundle;
 
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.wapecopy.R;
 import com.example.wapecopy.databinding.ActivityMainBinding;
 
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.example.wapecopy.search;
+package com.example.wapecopy.view.sample;
 
 import android.view.View;
 
@@ -7,9 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
 
-public class SimpleViewHolder extends RecyclerView.ViewHolder {
-
-    public SimpleViewHolder(@NonNull @NotNull View itemView) {
+public class SampleViewHolder extends RecyclerView.ViewHolder {
+    public SampleViewHolder(@NonNull @NotNull View itemView) {
         super(itemView);
     }
 }

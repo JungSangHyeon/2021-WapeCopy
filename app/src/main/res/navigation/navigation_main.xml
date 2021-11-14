@@ -7,27 +7,27 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.wapecopy.home.HomeFragment"
+        android:name="com.example.wapecopy.view.homeFragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.wapecopy.search.SearchFragment"
+        android:name="com.example.wapecopy.view.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/ratingFragment"
-        android:name="com.example.wapecopy.rating.RatingFragment"
+        android:name="com.example.wapecopy.view.RatingFragment"
         android:label="fragment_rating"
         tools:layout="@layout/fragment_rating" />
     <fragment
         android:id="@+id/newsFragment"
-        android:name="com.example.wapecopy.news.NewsFragment"
+        android:name="com.example.wapecopy.view.NewsFragment"
         android:label="fragment_news"
         tools:layout="@layout/fragment_news" />
     <fragment
         android:id="@+id/myWatchaFragment"
-        android:name="com.example.wapecopy.myWatcha.MyWatchaFragment"
+        android:name="com.example.wapecopy.view.MyWatchaFragment"
         android:label="fragment_my_watcha"
         tools:layout="@layout/fragment_my_watcha" />
     <action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment" />

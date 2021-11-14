@@ -1,8 +1,7 @@
-package com.example.wapecopy.home.movie.test;
+package com.example.wapecopy.view.homeFragment.movie.test;
 
 import com.example.wapecopy.R;
-import com.example.wapecopy.home.movie.data.MovieSet;
-import com.example.wapecopy.home.movie.data.MovieVertical;
+import com.example.wapecopy.view.homeFragment.movie.data.MovieSet;
 
 import java.util.ArrayList;
 

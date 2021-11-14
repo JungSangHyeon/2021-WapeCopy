@@ -1,4 +1,4 @@
-package com.example.wapecopy.news;
+package com.example.wapecopy.view.sample;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,13 +7,14 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.wapecopy.databinding.CompNoDataBinding;
+public class SampleFragment extends Fragment {
 
-public class NoDataFragment2 extends Fragment {
+    private final int layoutId;
+
+    public SampleFragment(int layoutId){ this.layoutId=layoutId; }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        CompNoDataBinding binding = CompNoDataBinding.inflate(inflater, container, false);
-        return binding.getRoot();
+        return inflater.inflate(layoutId, container, false);
     }
 }

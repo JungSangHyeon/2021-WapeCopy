@@ -1,4 +1,4 @@
-package com.example.wapecopy.home.movie.data;
+package com.example.wapecopy.view.homeFragment.movie.data;
 
 import lombok.Getter;
 import lombok.Setter;

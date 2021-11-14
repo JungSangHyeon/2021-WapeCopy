@@ -1,11 +1,11 @@
-package com.example.wapecopy.home.movie.view;
+package com.example.wapecopy.view.homeFragment.movie.view;
 
 import android.view.View;
 
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.wapecopy.databinding.CompMovieSetBinding;
-import com.example.wapecopy.home.movie.data.MovieSet;
+import com.example.wapecopy.view.homeFragment.movie.data.MovieSet;
 
 public class MovieSetViewHolder extends RecyclerView.ViewHolder {
 

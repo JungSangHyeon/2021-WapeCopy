@@ -1,4 +1,4 @@
-package com.example.wapecopy.home.movie.view;
+package com.example.wapecopy.view.homeFragment.movie.view;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -6,7 +6,9 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.wapecopy.databinding.CompMovieVerticalBinding;
-import com.example.wapecopy.home.movie.data.MovieVertical;
+import com.example.wapecopy.view.homeFragment.movie.data.MovieVertical;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
@@ -18,6 +20,7 @@ public class MovieVerticalAdapter extends RecyclerView.Adapter<MovieVerticalView
         this.movies=movies;
     }
 
+    @NotNull
     @Override
     public MovieVerticalViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
