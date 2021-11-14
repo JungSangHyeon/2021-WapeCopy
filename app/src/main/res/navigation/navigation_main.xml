@@ -22,7 +22,7 @@
         tools:layout="@layout/fragment_rating" />
     <fragment
         android:id="@+id/newsFragment"
-        android:name="com.example.wapecopy.NewsFragment"
+        android:name="com.example.wapecopy.news.NewsFragment"
         android:label="fragment_news"
         tools:layout="@layout/fragment_news" />
     <fragment
