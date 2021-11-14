@@ -18,8 +18,8 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/app_toolbar"
             android:layout_width="match_parent"
-
             android:layout_height="wrap_content"
+
             android:contentInsetStart="0dp"
             android:contentInsetLeft="0dp"
             android:contentInsetEnd="0dp"
@@ -27,8 +27,8 @@
             app:contentInsetEnd="0dp"
             app:contentInsetLeft="0dp"
             app:contentInsetRight="0dp"
-
             app:contentInsetStart="0dp"
+
             app:layout_scrollFlags="scroll|enterAlways"
             app:titleTextColor="@android:color/white">
 

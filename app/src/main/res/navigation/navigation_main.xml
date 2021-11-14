@@ -27,7 +27,7 @@
         tools:layout="@layout/fragment_news" />
     <fragment
         android:id="@+id/myWatchaFragment"
-        android:name="com.example.wapecopy.MyWatchaFragment"
+        android:name="com.example.wapecopy.myWatcha.MyWatchaFragment"
         android:label="fragment_my_watcha"
         tools:layout="@layout/fragment_my_watcha" />
     <action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment" />
