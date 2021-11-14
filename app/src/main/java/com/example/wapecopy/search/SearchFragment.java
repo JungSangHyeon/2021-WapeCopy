@@ -13,14 +13,11 @@ import com.example.wapecopy.databinding.FragmentSearchBinding;
 
 public class SearchFragment extends Fragment {
 
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         FragmentSearchBinding binding = FragmentSearchBinding.inflate(inflater, container, false);
-
-
-
+        binding.searchFragmentRecentMoviewRecyclerView.setAdapter(new SimpleAdapter(R.layout.comp_movie_image));
+        binding.searchFragmentPopularMovieRecyclerView.setAdapter(new SimpleAdapter(R.layout.comp_movie_horizontal));
         return binding.getRoot();
     }
 }
