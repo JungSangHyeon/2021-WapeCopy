@@ -10,7 +10,8 @@
         android:layout_width="63dp"
         android:layout_height="84dp"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginVertical="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,35 +19,43 @@
 
     <TextView
         android:id="@+id/movieHorizontalComp_titleTextView"
-        android:layout_width="0dp"
+        android:layout_width="329dp"
         android:layout_height="wrap_content"
-        android:text="쥬라기 공원"
         android:layout_marginLeft="10dp"
+        android:text="쥬라기 공원"
         android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/movieHorizontalComp_descriptionTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/movieHorizontalComp_imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintTop_toTopOf="@+id/movieHorizontalComp_imageView" />
 
     <TextView
         android:id="@+id/movieHorizontalComp_descriptionTextView"
-        android:layout_width="0dp"
+        android:layout_width="329dp"
         android:layout_height="wrap_content"
         android:text="1993·영화"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/movieHorizontalComp_titleTextView"
         app:layout_constraintStart_toStartOf="@+id/movieHorizontalComp_titleTextView"
         app:layout_constraintTop_toBottomOf="@+id/movieHorizontalComp_titleTextView" />
 
+    <RatingBar
+        android:id="@+id/movieHorizontalComp_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:transformPivotX="0dp"
+        app:layout_constraintStart_toEndOf="@+id/movieHorizontalComp_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/movieHorizontalComp_descriptionTextView" />
+
     <View
+        android:id="@+id/view"
         android:layout_width="0dp"
         android:layout_height="0.5dp"
-        android:layout_marginLeft="10dp"
         android:background="@color/light_gray"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/movieHorizontalComp_imageView" />
+        tools:layout_editor_absoluteY="119dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
