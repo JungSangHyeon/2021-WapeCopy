@@ -10,26 +10,24 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <include
-                android:id="@+id/include"
-                layout="@layout/comp_profile"
-                app:layout_constraintTop_toTopOf="parent"
-                />
+                layout="@layout/layout_profile"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <include
-                android:id="@+id/storage"
-                layout="@layout/comp_storage"
+                android:id="@+id/myWatchaFragment_storage"
+                layout="@layout/layout_storage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/margin"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/include"
-                />
+                app:layout_constraintTop_toBottomOf="@+id/include" />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

@@ -21,9 +21,9 @@ public class MyWatchaFragment extends Fragment {
     @Override
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         FragmentMyWatchaBinding binding = FragmentMyWatchaBinding.inflate(inflater, container, false);
-        ViewPager2 pager = binding.storage.homeFragmentViewPager2;
-        TabLayout tab = binding.storage.homeFragmentTabLayout;
-        SampleManager.initSampleToTabAndPager(getActivity(), R.layout.layout_storage, tab, pager);
+        ViewPager2 pager = binding.myWatchaFragmentStorage.homeFragmentViewPager2;
+        TabLayout tab = binding.myWatchaFragmentStorage.storageLayoutTabLayout;
+        SampleManager.initSampleToTabAndPager(getActivity(), R.layout.layout_storage_sample, tab, pager);
         return binding.getRoot();
     }
 }

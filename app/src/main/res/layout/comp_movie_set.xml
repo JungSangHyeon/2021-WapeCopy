@@ -4,30 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="5dp"
-    android:layout_marginBottom="30dp"
-    >
+    android:layout_marginTop="@dimen/margin"
+    android:layout_marginBottom="@dimen/margin_big">
 
     <ImageView
         android:id="@+id/movieSetComp_profileImageView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="10dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/margin"
+        android:contentDescription="@string/profile"
         app:layout_constraintBottom_toTopOf="@+id/movieSetComp_recyclerView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_sharp_person_24" />
+        app:srcCompat="@drawable/vector_user" />
 
     <TextView
         android:id="@+id/movieSetComp_descriptionTextView"
+        style="@style/DescriptionTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:text="정상님의 컬렉션"
-        android:maxLines="1"
+        android:layout_marginStart="@dimen/margin"
         android:ellipsize="end"
-        android:textColor="@color/dark_gray"
-        android:textSize="17dp"
+        android:maxLines="1"
+        android:text="@string/sample_movie_set_description"
         app:layout_constraintBottom_toTopOf="@+id/movieSetComp_titleTextView"
         app:layout_constraintEnd_toStartOf="@+id/movieSetComp_moreInfoImageView"
         app:layout_constraintStart_toEndOf="@+id/movieSetComp_profileImageView"
@@ -36,15 +35,13 @@
 
     <TextView
         android:id="@+id/movieSetComp_titleTextView"
+        style="@style/BigTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:text="나는 공룡이 좋아!"
-        android:maxLines="1"
+        android:layout_marginStart="@dimen/margin"
         android:ellipsize="end"
-        android:textColor="@color/black"
-        android:textSize="24dp"
-        android:textStyle="bold"
+        android:maxLines="1"
+        android:text="@string/sample_movie_set_title"
         app:layout_constraintBottom_toTopOf="@+id/movieSetComp_recyclerView"
         app:layout_constraintEnd_toStartOf="@+id/movieSetComp_moreInfoImageView"
         app:layout_constraintStart_toEndOf="@+id/movieSetComp_profileImageView"
@@ -52,21 +49,21 @@
 
     <ImageView
         android:id="@+id/movieSetComp_moreInfoImageView"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginRight="10dp"
+        style="@style/ImageView"
+        android:layout_marginEnd="@dimen/margin"
         app:layout_constraintBottom_toTopOf="@+id/movieSetComp_recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_navigate_next_24" />
+        app:srcCompat="@drawable/vector_next"
+        android:contentDescription="@string/open" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/movieSetComp_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:clipToPadding="false"
         android:orientation="horizontal"
         android:paddingHorizontal="5dp"
-        android:clipToPadding="false"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:listitem="@layout/comp_movie_vertical" />

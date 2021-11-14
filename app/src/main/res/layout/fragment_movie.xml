@@ -28,10 +28,10 @@
 
             <include
                 android:id="@+id/movieFragment_footer"
-                layout="@layout/comp_home_footer"
+                layout="@layout/layout_home_footer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp" />
+                android:layout_marginHorizontal="@dimen/margin" />
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>

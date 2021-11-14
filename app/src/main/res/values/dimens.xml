@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Margin  -->
+    <dimen name="margin_half">5dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="margin_big_half">15dp</dimen>
+    <dimen name="margin_big">30dp</dimen>
+
+    <!--  Text Size  -->
+    <dimen name="text_size_small">17sp</dimen>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="text_size_big">30sp</dimen>
+
+    <!--  Image Button Size  -->
+    <dimen name="image_button_size">30dp</dimen>
+    <dimen name="image_button_size_big">60dp</dimen>
+
+    <!--  Divider Size  -->
+    <dimen name="divider_size">0.5dp</dimen>
+
+</resources>

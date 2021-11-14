@@ -21,9 +21,9 @@ public class RatingFragment extends Fragment {
     @Override
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         FragmentRatingBinding binding = FragmentRatingBinding.inflate(inflater, container, false);
-        ViewPager2 pager = binding.homeFragmentViewPager2;
-        TabLayout tab = binding.homeFragmentTabLayout;
-        SampleManager.initSampleToTabAndPager(getActivity(), R.layout.comp_movie_rating_horizontal, tab, pager);
+        ViewPager2 pager = binding.ratingFragmentViewPager2;
+        TabLayout tab = binding.ratingFragmentTabLayout;
+        SampleManager.initSampleToTabAndPager(getActivity(), R.layout.layout_rating_list, tab, pager);
         return binding.getRoot();
     }
 }

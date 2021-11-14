@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="FragmentHomeTab" parent="TextAppearance.Design.Tab">
-        <item name="android:textSize">30sp</item>
+    <!--  Text View  -->
+    <style name="TextView">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="BoldTextView" parent="TextView">
         <item name="android:textStyle">bold</item>
     </style>
+    <style name="BigTextView" parent="TextView">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SmallTextView" parent="TextView">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="DescriptionTextView" parent="SmallTextView">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
 
-    <style name="FragmentMyWatcha" parent="TextAppearance.Design.Tab">
+    <!--  Image View  -->
+    <style name="ImageView">
+        <item name="android:layout_width">@dimen/image_button_size</item>
+        <item name="android:layout_height">@dimen/image_button_size</item>
+        <item name="tint">@color/gray</item>
+    </style>
+    <style name="BigImageView">
+        <item name="android:layout_width">@dimen/image_button_size_big</item>
+        <item name="android:layout_height">@dimen/image_button_size_big</item>
+        <item name="tint">@color/gray</item>
+    </style>
+
+    <!--  Divider  -->
+    <style name="Divider">
+        <item name="android:background">@color/light_gray</item>
+    </style>
+
+    <!--  Tab Layout Text  -->
+    <style name="HomeFragmentTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MyWatchaFragmentTabText" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
     </style>

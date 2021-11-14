@@ -3,24 +3,73 @@
     <string name="app_name">와피카피</string>
 
     <!--  Main Activity  -->
-    <!--    Menu    -->
-    <string name="home">홈</string>
-    <string name="search">검색</string>
-    <string name="rating">평가</string>
-    <string name="news">소식</string>
-    <string name="my_watcha">나의 왓챠</string>
+        <!--    Menu    -->
+        <string name="home">홈</string>
+        <string name="search">검색</string>
+        <string name="rating">평가</string>
+        <string name="news">소식</string>
+        <string name="my_watcha">나의 왓챠</string>
+            <!--  Home Fragment  -->
+                <!--  Tab  -->
+                <string name="movie">영화</string>
+                <string name="tv_program">TV 프로그램</string>
+                <string name="book">책</string>
+                <!--  Footer  -->
+                <string name="watcha_pedia_collection">왓차피디아 컬렉션</string>
+                <string name="academy_filming_award_winner">아카데미 촬영상 수상작</string>
+                <string name="academy_work_award_winner">아카데미 작품상 수상작</string>
+                <string name="academy_screenplay_award_winner">아카데미 각본상 수상작</string>
+                <string name="are_you_considering_what_to_see">아직 뭘 볼지 고민이신가요?</string>
+                <string name="get_more_recommendations">더 많은 추천 받기</string>
+                <string name="open">열기</string>
+                <!--  Movie Set  -->
+                <string name="sample_movie_set_description">정상님의 컬렉션</string>
+                <string name="sample_movie_set_title">나는 공룡이 좋아!</string>
+                <string name="sample_movie_description">1993·영화</string>
+                    <!-- Movie vertical   -->
+                    <string name="sample_movie_name">쥬라기 공원</string>
+                    <string name="sample_rating">평균★4.5</string>
+                    <string name="averageRating">평균★</string>
+            <!--  Search  -->
+            <string name="recently_viewed">최근에 본 작품</string>
+            <string name="delete_all">모두 삭제</string>
+            <string name="popular_work">요즘 인기 작품</string>
+                <!--  Search Bar  -->
+                <string name="search_field">검색 필드</string>
+                <string name="search_by_camera">카메라 검색</string>
+                <string name="search_bar_hint">작품, 감독, 배우, 컬랙션, 유저 등</string>
+            <!--  Rating  -->
+            <string name="please_rating">제가 취향을 알 수 있게, 작품을 평가해주세요.</string>
+                <!--  Rating List  -->
+                <string name="random_movie">랜덤 영화</string>
+            <!--  News  -->
+                <!--  fragment news  -->
+                <string name="event">이벤트</string>
+                <string name="my_news">내 소식</string>
+                <string name="friend_news">친구 소식</string>
+                <!--  No Data   -->
+                <string name="no_news">새로운 소식이 없어요.</string>
+            <!--  My Watcha  -->
+                <!--  Profile  -->
+                <string name="sample_name">정상</string>
+                <string name="follower">팔로워</string>
+                <string name="following">팔로잉</string>
+                <string name="edit_profile">프로필 수정</string>
+                <string name="evaluate">평가</string>
+                <string name="comment">코멘트</string>
+                <string name="collection">컬렉션</string>
+                <string name="profile">프로필</string>
+                <string name="sample_number">0</string>
+                <!--  Storage  -->
+                <string name="storage">보관함</string>
+                <string name="evaluated">평가한</string>
+                <string name="want_to_watch">보고싶어요</string>
+                <string name="watching">보는중</string>
+                    <!--  storage item  -->
+                    <string name="go_to_evaluate">평가하러 가기</string>
+                    <string name="no_evaluated_work">아직 평가한 작품이 없어요</string>
 
-    <!--  Home Fragment  -->
-    <!--  Tab  -->
-    <string name="movie">영화</string>
-    <string name="tv_program">TV 프로그램</string>
-    <string name="book">책</string>
-
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="averageRating">평균★</string>
-
-
+    <!--  System  -->
     <string name="appbar_scrolling_view_behavior" translatable="false">
         com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior
     </string>

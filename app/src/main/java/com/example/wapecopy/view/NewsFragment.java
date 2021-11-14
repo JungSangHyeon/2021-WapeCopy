@@ -20,9 +20,9 @@ public class NewsFragment extends Fragment {
     @Override
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         FragmentNewsBinding binding = FragmentNewsBinding.inflate(inflater, container, false);
-        ViewPager2 pager = binding.homeFragmentViewPager2;
-        TabLayout tab = binding.homeFragmentTabLayout;
-        SampleManager.initSampleToTabAndPager(getActivity(), R.layout.comp_no_data, tab, pager);
+        ViewPager2 pager = binding.newsFragmentViewPager2;
+        TabLayout tab = binding.newsFragmentTabLayout;
+        SampleManager.initSampleToTabAndPager(getActivity(), R.layout.layout_no_data, tab, pager);
         return binding.getRoot();
     }
 }

@@ -19,10 +19,10 @@
         app:tabIndicatorHeight="0dp"
         app:tabMaxWidth="0dp"
         app:tabMode="scrollable"
-        app:tabPaddingBottom="10dp"
-        app:tabPaddingTop="10dp"
+        app:tabPaddingBottom="@dimen/margin"
+        app:tabPaddingTop="@dimen/margin"
         app:tabSelectedTextColor="@color/black"
-        app:tabTextAppearance="@style/FragmentHomeTab"
+        app:tabTextAppearance="@style/HomeFragmentTabText"
         app:tabTextColor="@color/light_gray"
         app:tabUnboundedRipple="true">
 

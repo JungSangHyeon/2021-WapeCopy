@@ -22,12 +22,13 @@
         android:id="@+id/mainActivity_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemIconTint="@color/color_activity_main_menu"
+        app:itemIconTint="@color/color_bottom_navigation"
         app:itemRippleColor="@color/light_gray"
-        app:itemTextColor="@color/color_activity_main_menu"
+        app:itemTextColor="@color/color_bottom_navigation"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu_main" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

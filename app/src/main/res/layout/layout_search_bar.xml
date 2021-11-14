@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/searchBarLayout_backgroundImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin"
+        android:contentDescription="@string/search_field"
+        android:src="@drawable/shape_rect_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/dark_white" />
+
+    <ImageView
+        android:id="@+id/searchBarLayout_cameraSearchImageView"
+        android:layout_width="@dimen/image_button_size"
+        android:layout_height="@dimen/image_button_size"
+        android:layout_margin="@dimen/margin"
+        android:contentDescription="@string/search_by_camera"
+        android:src="@drawable/vector_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/searchBarLayout_backgroundImageView"
+        app:layout_constraintEnd_toEndOf="@+id/searchBarLayout_backgroundImageView"
+        app:layout_constraintTop_toTopOf="@+id/searchBarLayout_backgroundImageView" />
+
+    <ImageView
+        android:id="@+id/searchBarLayout_searchImageView"
+        android:layout_width="@dimen/image_button_size"
+        android:layout_height="@dimen/image_button_size"
+        android:layout_margin="@dimen/margin"
+        android:contentDescription="@string/search"
+        android:src="@drawable/vector_search"
+        app:layout_constraintBottom_toBottomOf="@+id/searchBarLayout_backgroundImageView"
+        app:layout_constraintStart_toStartOf="@+id/searchBarLayout_backgroundImageView"
+        app:layout_constraintTop_toTopOf="@+id/searchBarLayout_backgroundImageView" />
+
+    <EditText
+        android:id="@+id/searchBarLayout_searchEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="@string/search_bar_hint"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/searchBarLayout_backgroundImageView"
+        app:layout_constraintEnd_toStartOf="@+id/searchBarLayout_cameraSearchImageView"
+        app:layout_constraintStart_toEndOf="@+id/searchBarLayout_searchImageView"
+        app:layout_constraintTop_toTopOf="@+id/searchBarLayout_backgroundImageView" />
+
+    <View
+        style="@style/Divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_size"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
