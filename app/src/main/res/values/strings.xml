@@ -1,0 +1,22 @@
+<resources>
+    <!--  App  -->
+    <string name="app_name">와피카피</string>
+
+    <!--  Main Activity  -->
+    <!--    Menu    -->
+    <string name="home">홈</string>
+    <string name="search">검색</string>
+    <string name="rating">평가</string>
+    <string name="news">소식</string>
+    <string name="my_watcha">나의 왓챠</string>
+
+    <!--  Home Fragment  -->
+    <!--  Tab  -->
+    <string name="movie">영화</string>
+    <string name="tv_program">TV 프로그램</string>
+    <string name="book">책</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="averageRating">평균★</string>
+</resources>

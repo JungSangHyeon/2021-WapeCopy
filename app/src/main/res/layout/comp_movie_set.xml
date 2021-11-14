@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="30dp"
+    >
+
+    <ImageView
+        android:id="@+id/movieSetComp_profileImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/movieSetComp_recyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_sharp_person_24" />
+
+    <TextView
+        android:id="@+id/movieSetComp_descriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="정상님의 컬렉션"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/dark_gray"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/movieSetComp_titleTextView"
+        app:layout_constraintEnd_toStartOf="@+id/movieSetComp_moreInfoImageView"
+        app:layout_constraintStart_toEndOf="@+id/movieSetComp_profileImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/movieSetComp_titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="나는 공룡이 좋아!"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/movieSetComp_recyclerView"
+        app:layout_constraintEnd_toStartOf="@+id/movieSetComp_moreInfoImageView"
+        app:layout_constraintStart_toEndOf="@+id/movieSetComp_profileImageView"
+        app:layout_constraintTop_toBottomOf="@+id/movieSetComp_descriptionTextView" />
+
+    <ImageView
+        android:id="@+id/movieSetComp_moreInfoImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/movieSetComp_recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_navigate_next_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/movieSetComp_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="5dp"
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/comp_movie_vertical" />
+</androidx.constraintlayout.widget.ConstraintLayout>

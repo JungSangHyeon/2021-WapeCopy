@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.wapecopy.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.wapecopy.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/ratingFragment"
+        android:name="com.example.wapecopy.RatingFragment"
+        android:label="fragment_rating"
+        tools:layout="@layout/fragment_rating" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.wapecopy.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/myWatchaFragment"
+        android:name="com.example.wapecopy.MyWatchaFragment"
+        android:label="fragment_my_watcha"
+        tools:layout="@layout/fragment_my_watcha" />
+    <action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment" />
+    <action android:id="@+id/action_global_searchFragment" app:destination="@id/searchFragment" />
+    <action android:id="@+id/action_global_ratingFragment" app:destination="@id/ratingFragment" />
+    <action android:id="@+id/action_global_newsFragment" app:destination="@id/newsFragment" />
+    <action android:id="@+id/action_global_myWatchaFragment" app:destination="@id/myWatchaFragment" />
+</navigation>
